@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Website</title>
+
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <main>
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="./assets/images/avt.jpg" alt="Ta Cong Phi" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Tạ Công Phi">Tạ Công Phi</h1>
+
+          <p class="title">Programmer</p>
+        </div>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+              <a href="mailto:tacongphi1@gmail.com" class="contact-link">tacongphi1@gmail.com</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+
+              <a href="tel:+0343154361" class="contact-link">0343154361</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="contact-info">
+              <p class="contact-title">Birthday</p>
+
+              <time datetime="2003-06-01">June 01, 2003</time>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <address>Ward 4, District 8, HCM City</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="https://fb.com/dang.phong.163" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://instagram.com/s.t_wrong" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </aside>
+
+    <div class="main-content">
+
+      <article class="about  active" data-page="about">
+
+        <header>
+          <h3 class="h3 service-title">About me</h3>
+        </header>
+
+        <section class="about-text">
+          <p>
+            My name is Phi. I'm a student at Ho Chi Minh University of Education.
+          </p>
+
+          <p>
+            I am a second-year IT student with a passion for programming and research.
+          </p>
+          <p>
+            My major is Computer Science.
+          </p>
+        </section>
+
+
+        <!--
+          - service
+        -->
+
+        <section class="service">
+
+          <h3 class="h3 service-title">Projects</h3>
+
+          <ul class="service-list">
+
+            <li class="service-item">
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">First scientific paper</h4>
+
+                <p class="service-item-text">
+                  Real-Time Detection of School Violence using Machine Learning and Human Skeleton Tracking.
+                </p>
+
+                <div class="contact-info">
+                  <a href="https://ictaes.org/wp-content/uploads/2023/03/IJAE-Vol6-No1-2.pdf?ckattempt=1" class="contact-link"><b>Visit</b></a>
+                </div>
+
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">First Windows application</h4>
+
+                <p class="service-item-text">
+                  Snake game on the computer with many different game modes. The application is developed using Winform.
+                </p>
+
+                <div class="contact-info">
+                  <a href="https://github.com/phitc163/PPYNT_SnakeGame" class="contact-link"><b>Visit</b></a>
+                </div>
+
+              </div>
+
+            </li>
+
+          </ul>
+
+        <section class="clients">
+
+          <h3 class="h3 clients-title">Moments</h3>
+
+          <ul class="clients-list has-scrollbar">
+
+            <li class="clients-item">
+              <img src="./assets/images/tt.png" alt="client logo">
+            </li>
+
+            <li class="clients-item">
+              <img src="./assets/images/4.jpg" alt="client logo">
+            </li>
+
+            <li class="clients-item">
+              <img src="./assets/images/ds.jpg" alt="client logo">
+            </li>
+
+            <li class="clients-item">
+              <img src="./assets/images/3.jpg" alt="client logo">
+            </li>
+
+            <li class="clients-item">
+              <img src="./assets/images/2.jpg" alt="client logo">
+            </li>
+
+          </ul>
+
+        </section>
+
+      </section>
+  
+      <section class="contact-form">
+
+        <h3 class="h3 form-title">Contact Me</h3>
+
+        <form action="#" class="form" data-form>
+
+          <div class="input-wrapper">
+            <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+
+            <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+          </div>
+
+          <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+
+          <button class="form-btn" type="submit" disabled data-form-btn>
+            <ion-icon name="paper-plane"></ion-icon>
+            <span>Send Message</span>
+          </button>
+
+        </form>
+
+      </section>
+      </article>
+
+    </div>
+
+  </main>
+
+  <script src="./assets/js/script.js"></script>
+
+</body>
+
+</html>
